@@ -11,3 +11,18 @@ Saya mengubah struktur kode dari prosedural  menjadi **Object-Oriented Programmi
 * **Maintainability:** Refaktor ini meningkatkan maintainability karena saya menerapkan Dependency Injection dan Service Container untuk mengelola layanan secara terpusat, sehingga kode tidak lagi saling mengunci. Saya juga menghilangkan variabel global melalui enkapsulasi ke dalam kelas-kelas yang punya tanggung jawab spesifik (Repository, Service, Controller), yang menjamin data lebih aman dan tidak bocor. Dengan struktur modular ini, setiap bagian aplikasi jadi lebih mudah diuji secara mandiri dan siap dikembangkan lebih lanjut tanpa risiko merusak logika utama. Memudahkan pengembang lain untuk melakukan *unit testing* pada setiap modul secara independen tanpa harus menjalankan server FastAPI
 
 **Status:** Siap diuji. Seluruh fungsi endpoint (`/ask`, `/add`, `/status`) tetap bekerja sesuai spesifikasi awal
+
+# Setup Guide
+
+## 1. Setup Environment
+# Buat virtual environment
+venv\Scripts\activate  
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Copy .env.example ke .env
+cp .env.example .env
+
+## 2. Jalankan Aplikasi
+uvicorn app.main:app --reload
