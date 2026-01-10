@@ -15,7 +15,9 @@ Saya mengubah struktur kode dari prosedural  menjadi **Object-Oriented Programmi
 # Setup Guide
 
 * **Setup Environment**
-python -m venv venv setelah itu Aktivasi 
+python -m venv venv
+
+* **Activation Script**
 venv\Scripts\activate
 
 * **Install dependencies**
