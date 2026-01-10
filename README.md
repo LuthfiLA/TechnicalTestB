@@ -14,15 +14,14 @@ Saya mengubah struktur kode dari prosedural  menjadi **Object-Oriented Programmi
 
 # Setup Guide
 
-## 1. Setup Environment
-# Buat virtual environment
-venv\Scripts\activate  
+* **Setup Environment**
+venv\Scripts\activate
 
-# Install dependencies
+* **Install dependencies**
 pip install -r requirements.txt
 
-# Copy .env.example ke .env
+* **Copy .env.example ke .env**
 cp .env.example .env
 
-## 2. Jalankan Aplikasi
+* **Jalankan Aplikasi**
 uvicorn app.main:app --reload
